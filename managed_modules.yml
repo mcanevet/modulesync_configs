@@ -5,4 +5,5 @@
 - puppet-mcollective
 - puppet-openldap
 - puppet-openssl
+- puppet-ruby
 - puppet-tomcat
