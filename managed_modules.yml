@@ -1,4 +1,5 @@
 ---
 - puppet-archive
+- puppet-augeas
 - puppet-openldap
 - puppet-tomcat
