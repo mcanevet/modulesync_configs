@@ -1,6 +1,7 @@
 ---
 - puppet-archive
 - puppet-augeas
+- puppet-bind
 - puppet-kmod
 - puppet-mcollective
 - puppet-openldap
