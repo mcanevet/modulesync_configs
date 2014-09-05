@@ -1,6 +1,7 @@
 ---
 - puppet-archive
 - puppet-augeas
-- puppet-openssl
+- puppet-kmod
 - puppet-openldap
+- puppet-openssl
 - puppet-tomcat
