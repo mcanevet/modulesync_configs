@@ -8,3 +8,4 @@
 - puppet-postfix
 - puppet-ruby
 - puppet-tomcat
+- puppet-varnish
