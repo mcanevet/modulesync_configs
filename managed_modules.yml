@@ -2,6 +2,7 @@
 - puppet-archive
 - puppet-augeas
 - puppet-kmod
+- puppet-mcollective
 - puppet-openldap
 - puppet-openssl
 - puppet-tomcat
