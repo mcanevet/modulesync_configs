@@ -2,6 +2,7 @@
 - puppet-archive
 - puppet-augeas
 - puppet-bind
+- puppet-buildenv
 - puppet-firewall_c2c
 - puppet-kmod
 - puppet-mcollective
