@@ -8,6 +8,7 @@
 - puppet-mcollective
 - puppet-openldap
 - puppet-openssl
+- puppet-postgis
 - puppet-postfix
 - puppet-rsyncd
 - puppet-ruby
