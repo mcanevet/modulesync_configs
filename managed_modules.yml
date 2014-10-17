@@ -6,6 +6,7 @@
 - puppet-firewall_c2c
 - puppet-kmod
 - puppet-mcollective
+- puppet-mysql
 - puppet-nagios
 - puppet-openldap
 - puppet-openssl
