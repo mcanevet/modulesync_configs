@@ -15,7 +15,6 @@ Gemfile:
   - gem: rake
   - gem: rspec-puppet
   - gem: puppetlabs_spec_helper
-  - gem: serverspec
   - gem: puppet-lint
   - gem: pry
   - gem: simplecov
