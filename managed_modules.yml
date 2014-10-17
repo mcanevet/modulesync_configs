@@ -10,6 +10,7 @@
 - puppet-nagios
 - puppet-openldap
 - puppet-openssl
+- puppet-pacemaker
 - puppet-postgis
 - puppet-postfix
 - puppet-rdiff_backup
