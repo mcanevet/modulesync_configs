@@ -17,8 +17,6 @@ Gemfile:
   - gem: puppetlabs_spec_helper
   - gem: serverspec
   - gem: puppet-lint
-  - gem: beaker
-  - gem: beaker-rspec
   - gem: pry
   - gem: simplecov
 Rakefile:
