@@ -12,6 +12,7 @@
 - puppet-mcollective
 - puppet-mysql
 - puppet-nagios
+- puppet-networkmanager
 - puppet-openldap
 - puppet-openssl
 - puppet-pacemaker
