@@ -2,6 +2,18 @@
 language: ruby
 bundler_args: --without development
 script: <%= @configs['script'] %>
+<% if @configs['after_success'] -%>
+after_success:
+  <%= @configs['after_success'] %>
+<% end -%>
+<% if @configs['publisher_login'] -%>
+env:
+  global:
+    - PUBLISHER_LOGIN=<%= @configs['publisher_login'] %>
+  <%- @configs['secure_global_env'].any? do |s| -%>
+    - secure: "<%= s %>"
+  <%- end -%>
+<%- end -%>
 matrix:
   fast_finish: true
   include:
