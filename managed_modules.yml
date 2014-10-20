@@ -1,5 +1,6 @@
 ---
 - puppet-archive
+- puppet-accounts
 - puppet-augeas
 - puppet-bind
 - puppet-buildenv
