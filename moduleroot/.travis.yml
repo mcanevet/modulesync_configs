@@ -10,8 +10,10 @@ after_success:
 env:
   global:
     - PUBLISHER_LOGIN=<%= @configs['publisher_login'] %>
-  <%- @configs['secure_global_env'].any? do |s| -%>
+  <%- if @configs['secure_global_env'] -%>
+    <%- @configs['secure_global_env'].each do |s| -%>
     - secure: "<%= s %>"
+    <%- end -%>
   <%- end -%>
 <%- end -%>
 matrix:
