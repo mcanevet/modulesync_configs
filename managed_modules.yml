@@ -6,6 +6,7 @@
 - puppet-dhcp
 - puppet-firewall_c2c
 - puppet-kmod
+- puppet-mapserver
 - puppet-mcollective
 - puppet-mysql
 - puppet-nagios
