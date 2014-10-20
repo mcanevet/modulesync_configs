@@ -16,6 +16,7 @@
 - puppet-pacemaker
 - puppet-postgis
 - puppet-postfix
+- puppet-public_ipaddress
 - puppet-rdiff_backup
 - puppet-rsyncd
 - puppet-ruby
