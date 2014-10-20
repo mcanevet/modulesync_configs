@@ -20,6 +20,7 @@
 - puppet-postgis
 - puppet-postfix
 - puppet-public_ipaddress
+- puppet-python
 - puppet-rdiff_backup
 - puppet-rsyncd
 - puppet-ruby
