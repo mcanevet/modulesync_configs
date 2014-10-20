@@ -16,6 +16,7 @@
 - puppet-networkmanager
 - puppet-openldap
 - puppet-openssl
+- puppet-osrm
 - puppet-pacemaker
 - puppet-postgis
 - puppet-postfix
