@@ -25,6 +25,7 @@
 - puppet-rdiff_backup
 - puppet-rsyncd
 - puppet-ruby
+- puppet-selinux
 - puppet-tasseo
 - puppet-tomcat
 - puppet-varnish
