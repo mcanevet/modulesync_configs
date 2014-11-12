@@ -28,5 +28,6 @@
 - puppet-ruby
 - puppet-selinux
 - puppet-tasseo
+- puppet-tilecache
 - puppet-tomcat
 - puppet-varnish
