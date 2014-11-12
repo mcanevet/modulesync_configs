@@ -1,6 +1,6 @@
 ---
 .travis.yml:
-  script: "\"bundle exec rake validate && bundle exec rake lint && bundle exec rake spec SPEC_OPTS='--format documentation'\""
+  script: "\"bundle exec rake validate && bundle exec rake lint && bundle exec rake spec SPEC_OPTS='--format documentation' && bundle exec rake metadata\""
   after_success:
     # Publish modules to the Forge automatically
     - "git clone -q git://github.com/puppetlabs/ghpublisher.git .forge-releng"
@@ -19,6 +19,7 @@ Gemfile:
   - gem: rspec-puppet
   - gem: puppetlabs_spec_helper
   - gem: puppet-lint
+  - gem: metadata-json-lint
 Rakefile:
   default_disabled_lint_checks:
   - 'disable_80chars'
