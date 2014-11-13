@@ -27,6 +27,7 @@
 - puppet-rsyncd
 - puppet-ruby
 - puppet-selinux
+- puppet-systemd
 - puppet-tasseo
 - puppet-tilecache
 - puppet-tomcat
