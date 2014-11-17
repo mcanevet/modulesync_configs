@@ -6,6 +6,7 @@
 - puppet-buildenv
 - puppet-dhcp
 - puppet-firewall_c2c
+- puppet-googleauthenticator
 - puppet-hiera-undef
 - puppet-kmod
 - puppet-logstash
