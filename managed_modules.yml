@@ -15,6 +15,7 @@
 - puppet-mysql
 - puppet-nagios
 - puppet-networkmanager
+- puppet-nfs
 - puppet-openldap
 - puppet-openssl
 - puppet-osrm
