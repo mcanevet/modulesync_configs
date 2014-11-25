@@ -21,11 +21,10 @@ matrix:
 <% end -%>
 <% if @configs['allow_failures'] -%>
   allow_failures:
-<%- @configs['allow_failures'].each do |allow| %>
-    - <% allow.each do |k,v| %>
-      <%= k %>: <%= v %>
-      <% end -%>
-<%  end -%>
+<%- @configs['allow_failures'].each do |allow| -%>
+    - rvm: <%= allow['rvm'] %>
+      env: <%= allow['env'] %>
+<%   end -%>
 <% end -%>
 notifications:
   email: false

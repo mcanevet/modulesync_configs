@@ -14,9 +14,10 @@
   - rvm: 2.0.0
     env: PUPPET_GEM_VERSION="~> 3.0"
   - rvm: 2.0.0
-    env: PUPPET_GEM_VERSION="~> 3.0" PARSER="future"
+    env: PUPPET_GEM_VERSION="~> 3.0" PUPPET_PARSER="future"
   allow_failures:
-  - env: PUPPET_GEM_VERSION="~> 3.0" PARSER="future"
+  - rvm: 2.0.0
+    env: PUPPET_GEM_VERSION="~> 3.0" PUPPET_PARSER="future"
 Gemfile:
   required:
   - gem: rake
