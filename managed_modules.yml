@@ -22,6 +22,7 @@
 - puppet-pacemaker
 - puppet-postgis
 - puppet-postfix
+- puppet-proj
 - puppet-public_ipaddress
 - puppet-puppetserver
 - puppet-python
