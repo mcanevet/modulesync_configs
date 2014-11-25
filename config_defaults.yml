@@ -23,6 +23,8 @@ Gemfile:
   - gem: rake
   - gem: rspec-puppet
     git: "https://github.com/rodjek/rspec-puppet.git"
+    # Until https://github.com/rodjek/rspec-puppet/pull/222 is merged
+    branch: "future-no-import"
   - gem: puppetlabs_spec_helper
   - gem: puppet-lint
   - gem: metadata-json-lint
