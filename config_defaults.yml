@@ -13,10 +13,15 @@
     env: PUPPET_GEM_VERSION="~> 3.0"
   - rvm: 2.0.0
     env: PUPPET_GEM_VERSION="~> 3.0"
+  - rvm: 2.0.0
+    env: PUPPET_GEM_VERSION="~> 3.0" PARSER="future"
+  allow_failures:
+  - env: PUPPET_GEM_VERSION="~> 3.0" PARSER="future"
 Gemfile:
   required:
   - gem: rake
   - gem: rspec-puppet
+    git: "https://github.com/rodjek/rspec-puppet.git"
   - gem: puppetlabs_spec_helper
   - gem: puppet-lint
   - gem: metadata-json-lint
