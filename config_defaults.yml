@@ -29,6 +29,7 @@ Gemfile:
   - gem: puppet-lint
   - gem: metadata-json-lint
   - gem: puppet_facts
+    git: "https://github.com/camptocamp/puppet_facts.git"
 Rakefile:
   default_disabled_lint_checks:
   - 'disable_80chars'
