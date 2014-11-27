@@ -28,6 +28,7 @@ Gemfile:
   - gem: puppetlabs_spec_helper
   - gem: puppet-lint
   - gem: metadata-json-lint
+  - gem: puppet_facts
 Rakefile:
   default_disabled_lint_checks:
   - 'disable_80chars'
