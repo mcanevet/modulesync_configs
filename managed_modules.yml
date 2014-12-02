@@ -6,6 +6,7 @@
 - puppet-buildenv
 - puppet-dhcp
 - puppet-firewall_c2c
+- puppet-georchestra
 - puppet-googleauthenticator
 - puppet-hiera-undef
 - puppet-kmod
@@ -16,6 +17,7 @@
 - puppet-nagios
 - puppet-networkmanager
 - puppet-nfs
+- puppet-odoo
 - puppet-openldap
 - puppet-openssl
 - puppet-osrm
