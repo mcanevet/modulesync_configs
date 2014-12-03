@@ -1,6 +1,9 @@
 ---
 language: ruby
 bundler_args: --without development
+<% if @configs['install'] -%>
+install: <%= @configs['install'] %>
+<% end -%>
 script: <%= @configs['script'] %>
 <% if @configs['after_success'] -%>
 after_success:
