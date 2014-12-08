@@ -2,6 +2,7 @@
 - puppet-archive
 - puppet-accounts
 - puppet-augeas
+- puppet-backup
 - puppet-bind
 - puppet-buildenv
 - puppet-dhcp
