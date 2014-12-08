@@ -4,6 +4,7 @@
 - puppet-augeas
 - puppet-bind
 - puppet-buildenv
+- puppet-dell
 - puppet-dhcp
 - puppet-firewall_c2c
 - puppet-georchestra
