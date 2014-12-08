@@ -18,6 +18,7 @@
 - puppet-nagios
 - puppet-networkmanager
 - puppet-nfs
+- puppet-odbc
 - puppet-odoo
 - puppet-openldap
 - puppet-openssl
