@@ -2,11 +2,13 @@
 - puppet-archive
 - puppet-accounts
 - puppet-augeas
+- puppet-backup
 - puppet-bind
 - puppet-buildenv
 - puppet-dell
 - puppet-dhcp
 - puppet-firewall_c2c
+- puppet-geomapfish
 - puppet-georchestra
 - puppet-googleauthenticator
 - puppet-hiera-undef
