@@ -8,6 +8,7 @@
 - puppet-dell
 - puppet-dhcp
 - puppet-firewall_c2c
+- puppet-fprint
 - puppet-geomapfish
 - puppet-georchestra
 - puppet-googleauthenticator
