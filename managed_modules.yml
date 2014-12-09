@@ -7,6 +7,7 @@
 - puppet-buildenv
 - puppet-dhcp
 - puppet-firewall_c2c
+- puppet-geomapfish
 - puppet-georchestra
 - puppet-googleauthenticator
 - puppet-hiera-undef
