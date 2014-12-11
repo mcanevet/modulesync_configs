@@ -25,11 +25,14 @@ Gemfile:
     ':development, :unit_tests':
       - gem: rake
       - gem: rspec-puppet
+        git: https://github.com/rodjek/rspec-puppet.git
       - gem: puppetlabs_spec_helper
       - gem: puppet-lint
       - gem: simplecov
       - gem: puppet_facts
+        git: https://github.com/camptocamp/puppet_facts.git
       - gem: json
+      - gem: metadata-json-lint
     ':system_tests':
       - gem: beaker-rspec
       - gem: serverspec
