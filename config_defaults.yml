@@ -24,8 +24,7 @@ Gemfile:
       - gem: puppetlabs_spec_helper
       - gem: puppet-lint
       - gem: simplecov
-      - gem: puppet_facts
-        git: https://github.com/camptocamp/puppet_facts.git
+      - gem: rspec-puppet-facts
       - gem: json
       - gem: metadata-json-lint
     ':system_tests':
