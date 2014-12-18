@@ -2,7 +2,10 @@
 language: ruby
 <% if @configs['use_containers'] -%>
 sudo: false
-cache: bundler
+cache:
+  directories:
+    - vendor/bundle
+    - spec/fixtures/modules
 <% end -%>
 bundler_args: --without system_tests
 <% if @configs['install'] -%>
