@@ -1,5 +1,6 @@
 ---
 .travis.yml:
+  use_containers: true
   script:
     - bundle exec rake validate
     - bundle exec rake lint

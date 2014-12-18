@@ -1,5 +1,9 @@
 ---
 language: ruby
+<% if @configs['use_containers'] -%>
+sudo: false
+cache: bundler
+<% end -%>
 bundler_args: --without system_tests
 <% if @configs['install'] -%>
 install: <%= @configs['install'] %>
