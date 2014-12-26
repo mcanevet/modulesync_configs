@@ -19,6 +19,7 @@
 - puppet-hiera-undef
 - puppet-kmod
 - puppet-logstash
+- puppet-mailman
 - puppet-mapserver
 - puppet-mcollective
 - puppet-monitoring
