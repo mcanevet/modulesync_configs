@@ -38,6 +38,7 @@
 - puppet-rsyncd
 - puppet-ruby
 - puppet-selinux
+- puppet-shibboleth
 - puppet-ssh
 - puppet-systemd
 - puppet-tasseo
