@@ -47,6 +47,7 @@
 - puppet-rdiff_backup
 - puppet-rsyncd
 - puppet-ruby
+- puppet-samba
 - puppet-selinux
 - puppet-shibboleth
 - puppet-ssh
