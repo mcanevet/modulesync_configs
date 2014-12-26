@@ -30,6 +30,7 @@
 - puppet-odoo
 - puppet-openldap
 - puppet-openssl
+- puppet-openvmtools
 - puppet-osrm
 - puppet-pacemaker
 - puppet-postgis
