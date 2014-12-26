@@ -21,6 +21,7 @@
 - puppet-kmod
 - puppet-lighttpd
 - puppet-logstash
+- puppet-logcheck
 - puppet-mailman
 - puppet-mapserver
 - puppet-mcollective
