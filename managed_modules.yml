@@ -20,6 +20,7 @@
 - puppet-logstash
 - puppet-mapserver
 - puppet-mcollective
+- puppet-monitoring
 - puppet-mysql
 - puppet-nagios
 - puppet-networkmanager
