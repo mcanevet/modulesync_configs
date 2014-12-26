@@ -8,6 +8,7 @@
 - puppet-buildenv
 - puppet-dell
 - puppet-dhcp
+- puppet-drupal
 - puppet-firewall_c2c
 - puppet-fprint
 - puppet-geomapfish
