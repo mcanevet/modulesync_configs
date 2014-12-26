@@ -6,6 +6,7 @@
 - puppet-backup
 - puppet-bind
 - puppet-buildenv
+- puppet-couchdb
 - puppet-dell
 - puppet-deploy
 - puppet-dhcp
