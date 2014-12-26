@@ -41,6 +41,7 @@
 - puppet-public_ipaddress
 - puppet-puppetserver
 - puppet-python
+- puppet-qgis
 - puppet-rdiff_backup
 - puppet-rsyncd
 - puppet-ruby
