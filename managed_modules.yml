@@ -6,6 +6,7 @@
 - puppet-backup
 - puppet-bind
 - puppet-buildenv
+- puppet-c2c
 - puppet-couchdb
 - puppet-cups_c2c
 - puppet-dell
