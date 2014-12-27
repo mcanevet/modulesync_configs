@@ -5,7 +5,6 @@ sudo: false
 cache:
   directories:
     - vendor/bundle
-    - spec/fixtures/modules
 <% end -%>
 bundler_args: --without system_tests --path vendor/bundle
 <% if @configs['install'] -%>
