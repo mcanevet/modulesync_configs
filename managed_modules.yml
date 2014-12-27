@@ -18,6 +18,7 @@
 - puppet-georchestra
 - puppet-googleauthenticator
 - puppet-hiera-undef
+- puppet-iptables
 - puppet-kmod
 - puppet-lighttpd
 - puppet-logstash
