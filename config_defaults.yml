@@ -25,6 +25,7 @@ Gemfile:
       - gem: puppetlabs_spec_helper
       - gem: puppet-lint
         version: '< 1.1.0'
+      - gem: puppet-lint-unquoted_string-check
       - gem: simplecov
       - gem: rspec-puppet-facts
       - gem: json
