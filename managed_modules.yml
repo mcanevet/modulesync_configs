@@ -57,6 +57,8 @@
 - puppet-selinux
 - puppet-shibboleth
 - puppet-ssh
+- puppet-subversion
+- puppet-sudo
 - puppet-systemd
 - puppet-tilecache
 - puppet-tomcat
