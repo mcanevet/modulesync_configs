@@ -17,5 +17,5 @@ PuppetSyntax.exclude_paths = ["spec/fixtures/**/*.pp", "vendor/**/*"]
 
 desc "Lint metadata.json file"
 task :metadata do
-  sh "metadata-json-lint metadata.json"
+  sh "metadata-json-lint metadata.json<%= @configs['metadata-json-lint_options'].map { |r| ' --' + r }.join() if @configs['metadata-json-lint_options'] %>"
 end
