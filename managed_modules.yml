@@ -23,6 +23,7 @@
 - puppet-googleauthenticator
 - puppet-hiera-undef
 - puppet-iptables
+- puppet-kibana
 - puppet-kmod
 - puppet-lighttpd
 - puppet-logstash
@@ -41,6 +42,7 @@
 - puppet-openvmtools
 - puppet-osrm
 - puppet-pacemaker
+- puppet-passenger
 - puppet-postgis
 - puppet-postfix
 - puppet-profiles_common
