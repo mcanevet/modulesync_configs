@@ -29,6 +29,7 @@ Gemfile:
       - gem: puppet-lint-empty_string-check
       - gem: puppet-lint-spaceship_operator_without_tag-check
       - gem: puppet-lint-variable_contains_upcase
+      - gem: puppet-lint-absolute_classname-check
       - gem: simplecov
       - gem: rspec-puppet-facts
       - gem: json
