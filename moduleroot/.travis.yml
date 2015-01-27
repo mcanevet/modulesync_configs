@@ -4,7 +4,9 @@ language: ruby
 sudo: false
 cache: bundler
 <% end -%>
-bundler_args: --without system_tests
+bundler_args: '$([ -z "${BEAKER_set}" ] && echo "--without system_tests")'
+before_install:
+  - ssh-keygen -f ~/.ssh/id_rsa -y > ~/.ssh/id_rsa.pub
 <% if @configs['install'] -%>
 install: <%= @configs['install'] %>
 <% end -%>
@@ -47,4 +49,13 @@ deploy:
     all_branches: true
     # Only publish if our main Ruby target builds
     rvm: 1.9.3
+<% end -%>
+<% if @configs['globals'] -%>
+env:
+  global:
+<%- @configs['globals'].each do |envs| -%>
+<%- envs.each do |k, v| -%>
+    - <%= k %>: <%= v %>
+<% end -%>
+<% end -%>
 <% end -%>
