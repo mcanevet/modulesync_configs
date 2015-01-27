@@ -35,6 +35,7 @@ matrix:
 <% end -%>
 notifications:
   email: false
+<% if @configs['forge_password'] -%>
 deploy:
   provider: puppetforge
   user: <%= @configs['forge_login'] %>
@@ -46,3 +47,4 @@ deploy:
     all_branches: true
     # Only publish if our main Ruby target builds
     rvm: 1.9.3
+<% end -%>
