@@ -6,7 +6,8 @@ cache: bundler
 <% end -%>
 bundler_args: '$([ -z "${BEAKER_set}" ] && echo "--without system_tests")'
 before_install:
-  - ssh-keygen -f ~/.ssh/id_rsa -y > ~/.ssh/id_rsa.pub
+  - "[ -f ~/.ssh/id_rsa ] || ssh-keygen -t rsa -N '' -f ~/.ssh/id_rsa"
+  - "[ -f ~/.ssh/id_rsa.pub ] || ssh-keygen -f ~/.ssh/id_rsa -y > ~/.ssh/id_rsa.pub"
 <% if @configs['install'] -%>
 install: <%= @configs['install'] %>
 <% end -%>
