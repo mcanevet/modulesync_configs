@@ -10,3 +10,4 @@ HOSTS:
 CONFIG:
   type: foss
   openstack_network: default
+  log_level: debug
