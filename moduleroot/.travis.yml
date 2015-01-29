@@ -4,7 +4,7 @@ language: ruby
 sudo: false
 cache: bundler
 <% end -%>
-bundler_args: '$([ -z "${BEAKER_set}" ] && echo "--without system_tests")'
+bundler_args: --without system_tests
 <% if @configs['install'] -%>
 install: <%= @configs['install'] %>
 <% end -%>
@@ -24,6 +24,12 @@ matrix:
 <%   @configs['extras'].each do |extra| -%>
   - rvm: <%= extra['rvm'] %>
     env: <%= extra['env'] %>
+<%     if extra.has_key?('bundler_args') -%>
+    bundler_args: <%= extra['bundler_args'] %>
+<%     end -%>
+<%     if extra.has_key?('script') -%>
+    script: <%= extra['script'] %>
+<%     end -%>
 <%   end -%>
 <% end -%>
 <% if @configs['allow_failures'] -%>
