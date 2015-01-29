@@ -32,6 +32,24 @@ matrix:
 <%     end -%>
 <%   end -%>
 <% end -%>
+<% if File.file?("modules/#{@configs[:puppet_module]}/metadata.json") -%>
+<%   require 'json' -%>
+<%   metadata = JSON.parse(File.read("modules/#{@configs[:puppet_module]}/metadata.json")) -%>
+<%   if ! metadata['operatingsystem_support'].nil? -%>
+<%     metadata['operatingsystem_support'].each do |os_sup| -%>
+<%       operatingsystem = os_sup['operatingsystem'].downcase -%>
+<%       os_sup['operatingsystemrelease'].map do |operatingsystemmajrelease| -%>
+<%         if @configs['acceptance'] -%>
+<%           @configs['acceptance'].each do |spec| -%>
+  - env: BEAKER_set="<%= operatingsystem %>-<%= operatingsystemmajrelease %>-x86_64-openstack"
+    bundler_args:
+    script: '[ -z "${OS_AUTH_URL}" -o -z "${OS_USERNAME}" -o -z "${OS_PASSWORD}" -o -z "${OS_TENANT_NAME}" ] || bundle exec rspec spec/acceptance/<%= spec %>_spec.rb'
+<%           end -%>
+<%         end -%>
+<%       end -%>
+<%     end -%>
+<%   end -%>
+<% end -%>
 <% if @configs['allow_failures'] -%>
   allow_failures:
 <%- @configs['allow_failures'].each do |allow| -%>
