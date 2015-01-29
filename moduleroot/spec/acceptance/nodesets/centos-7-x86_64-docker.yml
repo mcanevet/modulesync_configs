@@ -1,10 +1,10 @@
 HOSTS:
-  debian-7-amd64:
+  centos-7-x86_64:
     default_apply_opts:
       strict_variables:
-    platform: debian-7-amd64
+    platform: el-7-x86_64
     hypervisor : docker
-    image: debian:7.5
+    image: centos:7
     # This stops the image from being deleted on completion, speeding up the process.
     docker_preserve_image: true
 CONFIG:

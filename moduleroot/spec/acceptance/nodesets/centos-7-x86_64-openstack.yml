@@ -1,13 +1,13 @@
 HOSTS:
-  debian-8-amd64:
+  centos-7-x86_64:
     default_apply_opts:
       strict_variables:
-    platform: debian-8-amd64
+    platform: el-7-x86_64
     hypervisor : openstack
     flavor: m1.small
-    image: debian-8-amd64-20141121
-    user: debian
+    image: centos-7-x86_64-genericcloud-20140929_01
+    user: centos
 CONFIG:
   type: foss
-  openstack_network: default
   log_level: debug
+  openstack_network: default
