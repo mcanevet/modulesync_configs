@@ -36,6 +36,9 @@ Gemfile:
       - gem: json
       - gem: metadata-json-lint
     ':system_tests':
+      - gem: beaker
+        git: https://github.com/mcanevet/beaker
+        branch: openstack
       - gem: beaker-rspec
       - gem: serverspec
 Rakefile:
