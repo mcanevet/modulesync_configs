@@ -40,6 +40,7 @@
 - puppet-openldap
 - puppet-openssl
 - puppet-openvmtools
+- puppet-os
 - puppet-osrm
 - puppet-pacemaker
 - puppet-passenger
