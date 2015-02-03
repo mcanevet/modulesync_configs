@@ -53,7 +53,6 @@
 - puppet-python
 - puppet-qgis
 - puppet-rdiff_backup
-- puppet-reprepro
 - puppet-rsyncd
 - puppet-rtd_battlenetinside
 - puppet-ruby
