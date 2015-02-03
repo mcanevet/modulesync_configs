@@ -18,10 +18,7 @@ RSpec.configure do |c|
     @old_env = {}
     ENV.each_key {|k| @old_env[k] = ENV[k]}
 
-    if Gem::Version.new(`puppet --version`) >= Gem::Version.new('3.5')
-      Puppet.settings[:strict_variables]=true
-    end
-
+    Puppet.settings[:strict_variables]=true if Gem::Version.new(Puppet::PUPPETVERSION) >= Gem::Version.new('3.5')
     Puppet.features.stubs(:root?).returns(true)
   end
 
