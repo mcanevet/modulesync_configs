@@ -32,6 +32,7 @@ Gemfile:
       - gem: puppet-lint-variable_contains_upcase
       - gem: puppet-lint-absolute_classname-check
       - gem: puppet-lint-undef_in_function-check
+      - gem: puppet-lint-leading_zero-check
       - gem: simplecov
       - gem: rspec-puppet-facts
       - gem: json
