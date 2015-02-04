@@ -21,8 +21,7 @@ Gemfile:
     ':development, :unit_tests':
       - gem: rake
       - gem: rspec-puppet
-        git: https://github.com/camptocamp/rspec-puppet.git
-        branch: rspec3
+        version: '~> 2.0'
       - gem: puppetlabs_spec_helper
       - gem: puppet-lint
         version: '~> 1.0.0'
