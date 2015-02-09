@@ -41,6 +41,7 @@
 - puppet-openssl
 - puppet-openvmtools
 - puppet-os
+- puppet-osbase
 - puppet-osrm
 - puppet-pacemaker
 - puppet-passenger
