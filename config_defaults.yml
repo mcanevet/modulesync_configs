@@ -35,6 +35,8 @@ Gemfile:
       - gem: rspec-puppet-facts
       - gem: json
       - gem: metadata-json-lint
+      - gem: docker-api
+        version: '1.15.0'
     ':system_tests':
       - gem: beaker
         git: https://github.com/raphink/beaker
