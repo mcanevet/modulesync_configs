@@ -31,6 +31,8 @@ Gemfile:
       - gem: puppet-lint-absolute_classname-check
       - gem: puppet-lint-undef_in_function-check
       - gem: puppet-lint-leading_zero-check
+      - gem: puppet-lint-trailing_comma-check
+      - gem: puppet-lint-file_ensure-check
       - gem: simplecov
       - gem: rspec-puppet-facts
       - gem: json
