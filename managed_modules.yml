@@ -14,6 +14,7 @@
 - puppet-dell
 - puppet-deploy
 - puppet-dhcp
+- puppet-dovecot
 - puppet-drupal
 - puppet-firewall_c2c
 - puppet-fprint
