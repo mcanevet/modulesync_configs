@@ -48,6 +48,7 @@
 - puppet-osrm
 - puppet-pacemaker
 - puppet-passenger
+- puppet-php
 - puppet-postgis
 - puppet-postfix
 - puppet-profiles_common
