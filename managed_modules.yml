@@ -29,6 +29,7 @@
 - puppet-logstash
 - puppet-mailman
 - puppet-mapserver
+- puppet-memcached
 - puppet-mcollective
 - puppet-monitoring
 - puppet-motd
