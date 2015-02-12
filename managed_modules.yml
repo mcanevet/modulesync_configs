@@ -31,6 +31,7 @@
 - puppet-mapserver
 - puppet-mcollective
 - puppet-monitoring
+- puppet-motd
 - puppet-mysql
 - puppet-nagios
 - puppet-networkmanager
