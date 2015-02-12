@@ -20,6 +20,7 @@
 - puppet-freepbx
 - puppet-geomapfish
 - puppet-georchestra
+- puppet-gnome
 - puppet-googleauthenticator
 - puppet-hiera-undef
 - puppet-iptables
