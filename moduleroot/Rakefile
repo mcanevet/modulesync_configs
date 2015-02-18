@@ -7,12 +7,11 @@ require '<%= r %>'
    end -%>
 
 Rake::Task[:lint].clear
-PuppetLint.configuration.fail_on_warnings
-<% checks = @configs['default_disabled_lint_checks'] + ( @configs['extra_disabled_lint_checks'] || [] ) -%>
-<% checks.each do |check| -%>
-PuppetLint.configuration.send('<%= check %>')
-<% end -%>
-PuppetLint.configuration.ignore_paths = ["spec/**/*.pp", "pkg/**/*.pp", "vendor/**/*.pp"]
+PuppetLint::RakeTask.new :lint do |config|
+  config.ignore_paths = ["spec/**/*.pp", "pkg/**/*.pp", "vendor/**/*.pp"]
+  config.disable_checks = ['80chars']
+  config.fail_on_warnings = true
+end
 
 PuppetSyntax.exclude_paths = ["spec/fixtures/**/*.pp", "vendor/**/*"]
 
