@@ -23,6 +23,8 @@ Gemfile:
       - gem: rspec-puppet
         version: '~> 2.0'
       - gem: puppetlabs_spec_helper
+        git: https://github.com/puppetlabs/puppetlabs_spec_helper
+        branch: master
       - gem: puppet-lint
       - gem: puppet-lint-unquoted_string-check
       - gem: puppet-lint-empty_string-check
