@@ -33,6 +33,7 @@ Gemfile:
       - gem: puppet-lint-leading_zero-check
       - gem: puppet-lint-trailing_comma-check
       - gem: puppet-lint-file_ensure-check
+      - gem: puppet-lint-version_comparison-check
       - gem: simplecov
       - gem: rspec-puppet-facts
       - gem: json
