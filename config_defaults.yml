@@ -37,15 +37,10 @@ Gemfile:
       - gem: puppet-lint-trailing_comma-check
       - gem: puppet-lint-file_ensure-check
       - gem: puppet-lint-version_comparison-check
-      - gem: simplecov
       - gem: rspec-puppet-facts
-      - gem: json
-      - gem: metadata-json-lint
-      - gem: docker-api
-        version: '1.15.0'
     ':system_tests':
       - gem: beaker
-        git: https://github.com/raphink/beaker
+        git: https://github.com/mcanevet/beaker
         branch: openstack
       - gem: beaker-rspec
       - gem: serverspec
