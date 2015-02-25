@@ -24,6 +24,7 @@ Gemfile:
         git: https://github.com/camptocamp/rspec-puppet
         branch: rspec3
       - gem: puppetlabs_spec_helper
+      - gem: metadata-json-lint
       - gem: puppet-lint
       - gem: puppet-lint-unquoted_string-check
       - gem: puppet-lint-empty_string-check
