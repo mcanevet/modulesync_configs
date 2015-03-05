@@ -41,7 +41,6 @@ Gemfile:
       - gem: rspec-puppet-facts
     ':system_tests':
       - gem: beaker
-        git: https://github.com/puppetlabs/beaker		
       - gem: beaker-rspec
       - gem: serverspec
 Rakefile:
