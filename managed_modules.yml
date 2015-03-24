@@ -50,7 +50,6 @@
 - puppet-osbase
 - puppet-osrm
 - puppet-pacemaker
-- puppet-passenger
 - puppet-pbuilder
 - puppet-php
 - puppet-postgis
