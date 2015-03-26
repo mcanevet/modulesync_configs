@@ -36,7 +36,11 @@ matrix:
      require 'json'
      metadata = JSON.parse(File.read("modules/#{@configs[:puppet_module]}/metadata.json"))
      if ! metadata['operatingsystem_support'].nil?
-       metadata['operatingsystem_support'].each do |os_sup|
+       operatingsystem_support = metadata['operatingsystem_support'].map { |o|
+         o['operatingsystem'] = 'CentOS' if ['redhat', 'oraclelinux', 'scientific'].include? o['operatingsystem'].downcase
+         o
+       }.uniq
+       operatingsystem_support.each do |os_sup|
          operatingsystem = os_sup['operatingsystem'].downcase
            os_sup['operatingsystemrelease'].map do |operatingsystemmajrelease|
            if @configs['acceptance']
