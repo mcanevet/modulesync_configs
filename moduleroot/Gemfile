@@ -9,17 +9,18 @@ source ENV['GEM_SOURCE'] || "https://rubygems.org"
 group <%= group %> do
 <% maxlen = gems.map! do |gem| -%>
 <%            { -%>
-<%              'gem'     => gem['gem'], -%>
-<%              'version' => gem['version'], -%>
-<%              'git'     => gem['git'], -%>
-<%              'branch'  => gem['branch'], -%>
-<%              'length'  => gem['gem'].length + (("', '".length if gem['version']) || 0) + gem['version'].to_s.length -%>
+<%              'gem'       => gem['gem'], -%>
+<%              'version'   => gem['version'], -%>
+<%              'git'       => gem['git'], -%>
+<%              'branch'    => gem['branch'], -%>
+<%              'length'    => gem['gem'].length + (("', '".length if gem['version']) || 0) + gem['version'].to_s.length, -%>
+<%              'condition' => gem['condition'], -%>
 <%            } -%>
 <%          end.map do |gem| -%>
 <%            gem['length'] -%>
 <%          end.max -%>
 <% gems.each do |gem| -%>
-  gem '<%= gem['gem'] %>'<%= ", '#{gem['version']}'" if gem['version'] %>, <%= ' ' * (maxlen - gem['length']) %> :require => false<%= ", :git => '#{gem['git']}'" if gem['git'] %><%= ", :branch => '#{gem['branch']}'" if gem['branch'] %>
+  gem '<%= gem['gem'] %>'<%= ", '#{gem['version']}'" if gem['version'] %>, <%= ' ' * (maxlen - gem['length']) %> :require => false<%= ", :git => '#{gem['git']}'" if gem['git'] %><%= ", :branch => '#{gem['branch']}'" if gem['branch'] %><%= " if #{gem['condition']}" if gem['condition'] %>
 <% end -%>
 end
 
