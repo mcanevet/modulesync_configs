@@ -7,6 +7,7 @@
 - puppet-augeas
 - puppet-aws
 - puppet-backup
+- puppet-bazaar
 - puppet-bind
 - puppet-buildenv
 - puppet-c2c
