@@ -19,6 +19,7 @@
 - puppet-dhcp
 - puppet-dovecot
 - puppet-drupal
+- puppet-duplicity
 - puppet-firewall_c2c
 - puppet-fprint
 - puppet-freepbx
