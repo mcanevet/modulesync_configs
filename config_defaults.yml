@@ -46,6 +46,7 @@ Gemfile:
       - gem: rspec-puppet-facts
     ':system_tests':
       - gem: beaker
+        version: '< 2.10' # PR#733 broke everything...
       - gem: beaker-rspec
       - gem: serverspec
 Rakefile:
