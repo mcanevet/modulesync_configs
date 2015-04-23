@@ -10,6 +10,7 @@
 - puppet-bazaar
 - puppet-bind
 - puppet-buildenv
+- puppet-cartoweb3
 - puppet-c2c
 - puppet-collectd
 - puppet-couchdb
@@ -18,15 +19,19 @@
 - puppet-deploy
 - puppet-dhcp
 - puppet-dovecot
+- puppet-drbd
 - puppet-drupal
 - puppet-duplicity
 - puppet-firewall_c2c
+- puppet-fonts
 - puppet-fprint
 - puppet-freepbx
 - puppet-geomapfish
 - puppet-georchestra
+- puppet-githubsync
 - puppet-gnome
 - puppet-googleauthenticator
+- puppet-haproxy_c2c
 - puppet-hiera-undef
 - puppet-iptables
 - puppet-kibana
@@ -72,6 +77,7 @@
 - puppet-ssh
 - puppet-subversion
 - puppet-sudo
+- puppet-syslog-ng
 - puppet-systemd
 - puppet-tilecache
 - puppet-tomcat
