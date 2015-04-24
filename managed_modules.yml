@@ -77,7 +77,6 @@
 - puppet-ssh
 - puppet-subversion
 - puppet-sudo
-- puppet-syslog-ng
 - puppet-systemd
 - puppet-tilecache
 - puppet-tomcat
