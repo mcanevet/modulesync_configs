@@ -28,7 +28,6 @@
 - puppet-freepbx
 - puppet-geomapfish
 - puppet-georchestra
-- puppet-githubsync
 - puppet-gnome
 - puppet-googleauthenticator
 - puppet-haproxy_c2c
