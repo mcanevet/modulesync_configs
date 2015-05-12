@@ -20,7 +20,6 @@
 - puppet-dhcp
 - puppet-dovecot
 - puppet-drbd
-- puppet-drupal
 - puppet-duplicity
 - puppet-firewall_c2c
 - puppet-fonts
