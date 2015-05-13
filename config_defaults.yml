@@ -43,6 +43,7 @@ Gemfile:
       - gem: puppet-lint-file_ensure-check
       - gem: puppet-lint-version_comparison-check
       - gem: puppet-lint-fileserver-check
+      - gem: puppet-lint-file_source_rights-check
       - gem: rspec-puppet-facts
     ':system_tests':
       - gem: beaker
