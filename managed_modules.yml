@@ -14,7 +14,6 @@
 - puppet-c2c
 - puppet-collectd
 - puppet-couchdb
-- puppet-cups_c2c
 - puppet-dell
 - puppet-deploy
 - puppet-dhcp
