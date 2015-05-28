@@ -45,6 +45,7 @@ Gemfile:
     ':system_tests':
       - gem: beaker
       - gem: beaker-rspec
+      - gem: beaker_spec_helper
       - gem: serverspec
 Rakefile:
   default_disabled_lint_checks:
