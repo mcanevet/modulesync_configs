@@ -29,6 +29,7 @@
 - puppet-googleauthenticator
 - puppet-haproxy_c2c
 - puppet-hiera-undef
+- puppet-icinga_monitoring
 - puppet-iptables
 - puppet-kibana
 - puppet-kmod
