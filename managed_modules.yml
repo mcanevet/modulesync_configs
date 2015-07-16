@@ -60,6 +60,7 @@
 - puppet-profiles_georchestra
 - puppet-proj
 - puppet-public_ipaddress
+- puppet-puppet_conf_providers
 - puppet-puppetserver
 - puppet-python
 - puppet-qgis
