@@ -43,6 +43,7 @@ Gemfile:
       - gem: puppet-lint-file_source_rights-check
       - gem: puppet-lint-alias-check
       - gem: rspec-puppet-facts
+      - gem: github_changelog_generator
     ':system_tests':
       - gem: beaker
       - gem: beaker-rspec

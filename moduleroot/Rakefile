@@ -22,3 +22,7 @@ task :metadata do
   sh "metadata-json-lint metadata.json<%= @configs['metadata-json-lint_options'].map { |r| ' --' + r }.join() if @configs['metadata-json-lint_options'] %>"
 end
 <% end -%>
+
+task :changelog do
+  sh 'github_changelog_generator'
+end
