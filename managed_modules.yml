@@ -4,6 +4,7 @@
 - puppet-administration
 - puppet-apache_c2c
 - puppet-augeas
+- puppet-augeas_file
 - puppet-aws
 - puppet-backup
 - puppet-bazaar
