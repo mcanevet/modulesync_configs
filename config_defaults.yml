@@ -44,6 +44,9 @@ Gemfile:
       - gem: puppet-lint-alias-check
       - gem: rspec-puppet-facts
       - gem: github_changelog_generator
+        git: 'https://github.com/raphink/github-changelog-generator.git'
+        branch: 'dev/all_patches'
+      - gem: puppet-blacksmith
     ':system_tests':
       - gem: beaker
       - gem: beaker-rspec
