@@ -10,6 +10,7 @@
 - puppet-bazaar
 - puppet-bind
 - puppet-buildenv
+- puppet-carbon
 - puppet-cartoweb3
 - puppet-c2c
 - puppet-collectd
