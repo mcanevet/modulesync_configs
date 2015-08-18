@@ -5,6 +5,8 @@ spec/fixtures/
 .vagrant/
 .bundle/
 coverage/
+.*.swp
+*~
 <% if ! @configs['paths'].nil? -%>
 <% @configs['paths'].each do |path| -%>
 <%= path %>
