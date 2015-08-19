@@ -5,6 +5,7 @@ spec/fixtures/
 .vagrant/
 .bundle/
 coverage/
+log/
 .*.swp
 *~
 <% if ! @configs['paths'].nil? -%>
