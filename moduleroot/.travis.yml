@@ -45,9 +45,12 @@ matrix:
            os_sup['operatingsystemrelease'].map do |operatingsystemmajrelease|
            if @configs['acceptance']
              @configs['acceptance'].each do |spec| -%>
-  - env: BEAKER_set="<%= operatingsystem %>-<%= operatingsystemmajrelease %>-x86_64-openstack"
+  - rvm: default
+    sudo: required
+    services: docker
+    env: BEAKER_set="<%= operatingsystem %>-<%= operatingsystemmajrelease %>-x86_64-docker"
     bundler_args:
-    script: '[ -z "${OS_AUTH_URL}" -o -z "${OS_USERNAME}" -o -z "${OS_PASSWORD}" -o -z "${OS_TENANT_NAME}" ] || bundle exec rspec spec/acceptance/<%= spec %>_spec.rb'
+    script: bundle exec rspec spec/acceptance/<%= spec %>_spec.rb
 <%        end
         end
       end
