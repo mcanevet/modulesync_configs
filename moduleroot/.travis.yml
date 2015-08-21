@@ -23,6 +23,12 @@ matrix:
 <% if @configs['extras']
      @configs['extras'].each do |extra| -%>
   - rvm: <%= extra['rvm'] %>
+<%     if extra.has_key?('sudo') -%>
+    sudo: <%= extra['sudo'] %>
+<%     end -%>
+<%     if extra.has_key?('services') -%>
+    services: <%= extra['services'] %>
+<%     end -%>
     env: <%= extra['env'] %>
 <%     if extra.has_key?('bundler_args') -%>
     bundler_args: <%= extra['bundler_args'] %>
