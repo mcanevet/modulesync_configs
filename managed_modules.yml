@@ -36,7 +36,6 @@
 - puppet-kibana
 - puppet-kmod
 - puppet-lighttpd
-- puppet-logstash
 - puppet-mailman
 - puppet-mapserver
 - puppet-mcollective
