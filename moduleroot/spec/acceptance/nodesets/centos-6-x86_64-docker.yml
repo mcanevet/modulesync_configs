@@ -5,7 +5,7 @@ HOSTS:
       strict_variables:
     platform: el-6-x86_64
     hypervisor : docker
-    image: centos:6
+    image: electrical/centos:6.4
     docker_preserve_image: true
     docker_cmd: '["/sbin/init"]'
     docker_image_commands:
