@@ -11,7 +11,7 @@ HOSTS:
     docker_image_commands:
       - 'rm /usr/sbin/policy-rc.d'
       - 'rm /sbin/initctl; dpkg-divert --rename --remove /sbin/initctl'
-      - 'apt-get install -y wget'
+      - 'apt-get install -y net-tools wget'
 CONFIG:
   type: foss
   log_level: debug
