@@ -44,8 +44,6 @@ Gemfile:
       - gem: puppet-lint-alias-check
       - gem: rspec-puppet-facts
       - gem: github_changelog_generator
-        git: 'https://github.com/raphink/github-changelog-generator.git'
-        branch: 'dev/all_patches'
         condition: 'RUBY_VERSION !~ /^1.8/'
       - gem: puppet-blacksmith
         condition: 'RUBY_VERSION !~ /^1.8/'
