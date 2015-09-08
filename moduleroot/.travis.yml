@@ -56,7 +56,7 @@ matrix:
     services: docker
     env: BEAKER_set="<%= operatingsystem %>-<%= operatingsystemmajrelease %>-x86_64-docker"
     bundler_args:
-    script: bundle exec rspec spec/acceptance/<%= spec %>_spec.rb
+    script: travis_retry bundle exec rspec spec/acceptance/<%= spec %>_spec.rb
 <%        end
         end
       end
