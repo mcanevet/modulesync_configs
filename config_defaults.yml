@@ -50,7 +50,6 @@ Gemfile:
     ':system_tests':
       - gem: beaker
       - gem: beaker-rspec
-        version: '5.2.0'
       - gem: beaker_spec_helper
       - gem: serverspec
 Rakefile:
