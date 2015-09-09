@@ -43,6 +43,7 @@ Gemfile:
       - gem: puppet-lint-file_source_rights-check
       - gem: puppet-lint-alias-check
       - gem: rspec-puppet-facts
+      - gem: ruby-augeas
       - gem: github_changelog_generator
         condition: 'RUBY_VERSION !~ /^1.8/'
       - gem: puppet-blacksmith

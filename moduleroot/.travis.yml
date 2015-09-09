@@ -2,6 +2,10 @@
 language: ruby
 <% if @configs['use_containers'] -%>
 sudo: false
+addons:
+  apt:
+    packages:
+      - libaugeas-dev
 cache: bundler
 <% end -%>
 bundler_args: --without system_tests
