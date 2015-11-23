@@ -57,6 +57,7 @@ matrix:
              @configs['acceptance'].each do |spec| -%>
   - rvm: default
     sudo: required
+    dist: trusty
     services: docker
     env: BEAKER_set="<%= operatingsystem %>-<%= operatingsystemmajrelease %>-x86_64-docker"
     bundler_args:
