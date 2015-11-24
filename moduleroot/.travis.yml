@@ -20,9 +20,16 @@ after_success:
 matrix:
   fast_finish: true
   include:
-<% @configs['includes'].each do |include| -%>
+<% require 'octokit'
+begin
+  Octokit.repo "camptocamp/#{@configs[:puppet_module]}"
+  @configs['includes'].each do |include| -%>
   - rvm: <%= include['rvm'] %>
     env: <%= include['env'] %>
+<% end
+rescue Octokit::NotFound -%>
+  - rvm: 2.1.7
+    env: PUPPET_GEM_VERSION="~> 4.0"
 <% end -%>
 <% if @configs['extras']
      @configs['extras'].each do |extra| -%>
