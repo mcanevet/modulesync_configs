@@ -66,7 +66,7 @@ rescue Octokit::NotFound -%>
     sudo: required
     dist: trusty
     services: docker
-    env: BEAKER_set="<%= operatingsystem %>-<%= operatingsystemmajrelease %>-x86_64-docker"
+    env: BEAKER_set="<%= operatingsystem %>-<%= operatingsystemmajrelease %>"
     bundler_args:
     script: sudo service docker restart ; sleep 10 && bundle exec rspec spec/acceptance/<%= spec %>_spec.rb
 <%        end

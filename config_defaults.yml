@@ -57,3 +57,65 @@ Rakefile:
   default_disabled_lint_checks:
   - 'relative'
   - 'disable_80chars'
+spec/acceptance/nodesets/centos-5-x86_64-docker.yml:
+  delete: true
+spec/acceptance/nodesets/centos-6-x86_64-openstack.yml:
+  delete: true
+spec/acceptance/nodesets/centos-6-x86_64-vagrant.yml:
+  delete: true
+spec/acceptance/nodesets/centos-6-x86_64-docker.yml:
+  delete: true
+spec/acceptance/nodesets/centos-7-x86_64-openstack.yml:
+  delete: true
+spec/acceptance/nodesets/centos-7-x86_64-vagrant.yml:
+  delete: true
+spec/acceptance/nodesets/centos-7-x86_64-docker.yml:
+  delete: true
+spec/acceptance/nodesets/debian-6-x86_64-openstack.yml:
+  delete: true
+spec/acceptance/nodesets/debian-6-x86_64-vagrant.yml:
+  delete: true
+spec/acceptance/nodesets/debian-6-x86_64-docker.yml:
+  delete: true
+spec/acceptance/nodesets/debian-7-x86_64-openstack.yml:
+  delete: true
+spec/acceptance/nodesets/debian-7-x86_64-vagrant.yml:
+  delete: true
+spec/acceptance/nodesets/debian-7-x86_64-docker.yml:
+  delete: true
+spec/acceptance/nodesets/debian-8-x86_64-openstack.yml:
+  delete: true
+spec/acceptance/nodesets/debian-8-x86_64-vagrant.yml:
+  delete: true
+spec/acceptance/nodesets/debian-8-x86_64-docker.yml:
+  delete: true
+spec/acceptance/nodesets/ubuntu-12.04-x86_64-openstack.yml:
+  delete: true
+spec/acceptance/nodesets/ubuntu-12.04-x86_64-vagrant.yml:
+  delete: true
+spec/acceptance/nodesets/ubuntu-12.04-x86_64-docker.yml:
+  delete: true
+spec/acceptance/nodesets/ubuntu-14.04-x86_64-openstack.yml:
+  delete: true
+spec/acceptance/nodesets/ubuntu-14.04-x86_64-vagrant.yml:
+  delete: true
+spec/acceptance/nodesets/ubuntu-14.04-x86_64-docker.yml:
+  delete: true
+spec/acceptance/nodesets/ubuntu-14.10-x86_64-openstack.yml:
+  delete: true
+spec/acceptance/nodesets/ubuntu-14.10-x86_64-vagrant.yml:
+  delete: true
+spec/acceptance/nodesets/ubuntu-14.10-x86_64-docker.yml:
+  delete: true
+spec/acceptance/nodesets/ubuntu-15.04-x86_64-openstack.yml:
+  delete: true
+spec/acceptance/nodesets/ubuntu-15.04-x86_64-vagrant.yml:
+  delete: true
+spec/acceptance/nodesets/ubuntu-15.04-x86_64-docker.yml:
+  delete: true
+spec/acceptance/nodesets/ubuntu-15.10-x86_64-openstack.yml:
+  delete: true
+spec/acceptance/nodesets/ubuntu-15.10-x86_64-vagrant.yml:
+  delete: true
+spec/acceptance/nodesets/ubuntu-15.10-x86_64-docker.yml:
+  delete: true
