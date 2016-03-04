@@ -14,14 +14,11 @@ PuppetLint::RakeTask.new :lint do |config|
 end
 
 PuppetSyntax.exclude_paths = ["spec/fixtures/**/*.pp", "vendor/**/*"]
-<% if @configs['metadata-json-lint_options'] and !@configs['metadata-json-lint_options'].empty? -%>
-
-desc "Lint metadata.json file"
-Rake::Task[:metadata].clear
-task :metadata do
-  sh "metadata-json-lint metadata.json<%= @configs['metadata-json-lint_options'].map { |r| ' --' + r }.join() if @configs['metadata-json-lint_options'] %>"
-end
-<% end -%>
+<% if @configs['metadata-json-lint_options']
+  @configs['metadata-json-lint_options'].each do |k, v| -%>
+MetadataJsonLint::options[:<%= k %>] = <%= v %>
+<% end
+end -%>
 
 # Publishing tasks
 unless RUBY_VERSION =~ /^1\./
