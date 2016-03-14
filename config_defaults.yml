@@ -21,6 +21,8 @@ Gemfile:
   required:
     ':development, :unit_tests':
       - gem: rake
+        version: ' < 11.0'
+        condition: 'RUBY_VERSION =~ /^1\.8/'
       - gem: rspec
         version: '< 3.2'
         condition: 'RUBY_VERSION =~ /^1\.8/'
