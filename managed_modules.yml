@@ -67,6 +67,7 @@
 - puppet-puppetserver
 - puppet-python
 - puppet-qgis
+- puppet-rancher-providers
 - puppet-rdiff_backup
 - puppet-rsyncd
 - puppet-ruby
