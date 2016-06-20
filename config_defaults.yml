@@ -53,6 +53,9 @@ Gemfile:
       - gem: beaker-rspec
       - gem: beaker_spec_helper
       - gem: serverspec
+# Pin version due to bug in 2.59.1
+      - gem: specinfra
+        version: '2.59.0'
 Rakefile:
   default_disabled_lint_checks:
   - 'relative'
