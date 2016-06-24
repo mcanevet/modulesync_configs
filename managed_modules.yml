@@ -81,4 +81,5 @@
 - puppet-systemd
 - puppet-tilecache
 - puppet-tomcat
+- puppet-tmpreaper
 - puppet-varnish
