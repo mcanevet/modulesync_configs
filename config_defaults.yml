@@ -19,11 +19,7 @@ Gemfile:
   required:
     ':development, :unit_tests':
       - gem: rake
-        version: ' < 11.0'
-        condition: 'RUBY_VERSION =~ /^1\.8/'
       - gem: rspec
-        version: '< 3.2'
-        condition: 'RUBY_VERSION =~ /^1\.8/'
       - gem: rspec-puppet
       - gem: puppetlabs_spec_helper
       - gem: metadata-json-lint
@@ -42,8 +38,6 @@ Gemfile:
       - gem: puppet-lint-alias-check
       - gem: rspec-puppet-facts
       - gem: ruby-augeas
-#      - gem: github_changelog_generator
-#        condition: 'RUBY_VERSION !~ /^1\.8/'
       - gem: puppet-blacksmith
         condition: 'RUBY_VERSION !~ /^1\./'
     ':system_tests':
