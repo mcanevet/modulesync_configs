@@ -6,6 +6,8 @@ addons:
   apt:
     packages:
       - libaugeas-dev
+    sources:
+      - augeas
 cache: bundler
 <% end -%>
 bundler_args: --without system_tests
