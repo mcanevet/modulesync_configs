@@ -40,6 +40,8 @@ Gemfile:
       - gem: ruby-augeas
       - gem: puppet-blacksmith
         condition: 'RUBY_VERSION !~ /^1\./'
+      - gem: json_pure
+        version: '< 2.0.2'
     ':system_tests':
       - gem: beaker
       - gem: beaker-rspec
