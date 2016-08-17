@@ -60,7 +60,6 @@
 - puppet-postgis
 - puppet-postfix
 - puppet-profiles_common
-- puppet-profiles_georchestra
 - puppet-proj
 - puppet-public_ipaddress
 - puppet-puppet_conf_providers
