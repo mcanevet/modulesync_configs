@@ -28,7 +28,6 @@
 - puppet-freepbx
 - puppet-geomapfish
 - puppet-georchestra
-- puppet-geoserver
 - puppet-gnome
 - puppet-googleauthenticator
 - puppet-haproxy_c2c
@@ -70,7 +69,6 @@
 - puppet-rdiff_backup
 - puppet-rsyncd
 - puppet-rsyslogv8
-- puppet-ruby
 - puppet-samba
 - puppet-selinux
 - puppet-shibboleth
