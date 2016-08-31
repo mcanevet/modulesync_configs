@@ -29,7 +29,6 @@
 - puppet-geomapfish
 - puppet-georchestra
 - puppet-gnome
-- puppet-googleauthenticator
 - puppet-haproxy_c2c
 - puppet-icinga_monitoring
 - puppet-kibana
