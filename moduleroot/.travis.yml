@@ -24,7 +24,7 @@ matrix:
   include:
 <% require 'octokit'
 begin
-  Octokit.repo "camptocamp/#{@configs[:puppet_module]}"
+  Octokit::Client.new(:netrc => true).repo "camptocamp/#{@configs[:puppet_module]}"
   @configs['includes'].each do |include| -%>
   - rvm: <%= include['rvm'] %>
     env: <%= include['env'] %>
