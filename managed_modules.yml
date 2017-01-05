@@ -36,7 +36,6 @@
 - puppet-lighttpd
 - puppet-mailman
 - puppet-mapserver
-- puppet-mcollective
 - puppet-monitoring
 - puppet-motd
 - puppet-nagios
