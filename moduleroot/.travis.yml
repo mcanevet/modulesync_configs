@@ -56,7 +56,7 @@ rescue Octokit::NotFound -%>
      metadata = JSON.parse(File.read("modules/#{@configs[:puppet_module]}/metadata.json"))
      if ! metadata['operatingsystem_support'].nil?
        operatingsystem_support = metadata['operatingsystem_support'].map { |o|
-         o['operatingsystem'] = 'CentOS' if ['redhat', 'oraclelinux', 'scientific'].include? o['operatingsystem'].downcase
+         o['operatingsystem'] = 'CentOS' if ['redhat', 'oraclelinux', 'scientific', 'amazon'].include? o['operatingsystem'].downcase
          o
        }.uniq
        operatingsystem_support.each do |os_sup|
