@@ -7,10 +7,10 @@
     - bundle exec rake spec SPEC_OPTS='--format documentation'
   forge_login: "camptocamp"
   includes:
-  - rvm: 2.1.10
+  - rvm: 2.1.9
     env: PUPPET_GEM_VERSION="~> 4.0"
-  - rvm: 2.3.4
-    env: PUPPET_GEM_VERSION="~> 4"
+  - rvm: 2.1.9
+    env: PUPPET_GEM_VERSION="~> 5.0"
 Gemfile:
   required:
     ':development, :unit_tests':
