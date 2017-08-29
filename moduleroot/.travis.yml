@@ -83,7 +83,7 @@ end -%>
     - rvm: <%= allow['rvm'] %>
       sudo: <%= allow['sudo'] %>
       dist: <%= allow['dist'] %>
-      service: <%= allow['service'] %>
+      services: <%= allow['services'] %>
       env: <%= allow['env'] %>
       bundler_args: <%= allow['bundler_args'] %>
       script: <%= allow['script'] %>
