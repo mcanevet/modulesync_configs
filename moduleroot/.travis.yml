@@ -81,7 +81,12 @@ end -%>
   allow_failures:
 <%- @configs['allow_failures'].each do |allow| -%>
     - rvm: <%= allow['rvm'] %>
+      sudo: <%= allow['sudo'] %>
+      dist: <%= allow['dist'] %>
+      service: <%= allow['service'] %>
       env: <%= allow['env'] %>
+      bundler_args: <%= allow['bundler_args'] %>
+      script: <%= allow['script'] %>
 <%   end -%>
 <% end -%>
 notifications:
