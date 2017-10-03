@@ -104,9 +104,3 @@ Rakefile:
 #  delete: true
 #spec/acceptance/nodesets/ubuntu-15.04-x86_64-docker.yml:
 #  delete: true
-#spec/acceptance/nodesets/ubuntu-15.10-x86_64-openstack.yml:
-#  delete: true
-#spec/acceptance/nodesets/ubuntu-15.10-x86_64-vagrant.yml:
-#  delete: true
-#spec/acceptance/nodesets/ubuntu-15.10-x86_64-docker.yml:
-#  delete: true
