@@ -61,9 +61,10 @@ rescue Octokit::NotFound -%>
        }.uniq
        operatingsystem_support.each do |os_sup|
          operatingsystem = os_sup['operatingsystem'].downcase
-           os_sup['operatingsystemrelease'].map do |operatingsystemmajrelease|
-           if @configs['acceptance']
-             @configs['acceptance'].each do |spec| -%>
+         if os_sup.has_key?('operatingsystemrelease')
+             os_sup['operatingsystemrelease'].map do |operatingsystemmajrelease|
+                 if @configs['acceptance']
+                     @configs['acceptance'].each do |spec| -%>
   - rvm: default
     sudo: required
     dist: trusty
@@ -71,12 +72,14 @@ rescue Octokit::NotFound -%>
     env: BEAKER_set="<%= operatingsystem %>-<%= operatingsystemmajrelease %>"
     bundler_args:
     script: sudo service docker restart ; sleep 10 && bundle exec rspec spec/acceptance/<%= spec %>_spec.rb
-<%        end
-        end
-      end
-    end
-  end
-end -%>
+<%                   end  # each
+                 end  # if
+             end  # map
+         end  # if
+       end  # each
+     end  # if
+   end  # if
+-%>
 <% if @configs['allow_failures'] -%>
   allow_failures:
 <%- @configs['allow_failures'].each do |allow| -%>
