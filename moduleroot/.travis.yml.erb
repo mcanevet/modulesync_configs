@@ -30,8 +30,6 @@ begin
     env: <%= include['env'] %>
 <% end
 rescue Octokit::NotFound -%>
-  - rvm: 2.1.10
-    env: PUPPET_GEM_VERSION="~> 4.0"
 <% end -%>
 <% if @configs['extras']
      @configs['extras'].each do |extra| -%>
@@ -69,7 +67,9 @@ rescue Octokit::NotFound -%>
     sudo: required
     dist: trusty
     services: docker
-    env: BEAKER_set="<%= operatingsystem %>-<%= operatingsystemmajrelease %>"
+    env:
+      - BEAKER_set="<%= operatingsystem %>-<%= operatingsystemmajrelease %>"
+      - BEAKER_PUPPET_COLLECTION=puppet5
     bundler_args:
     script: sudo service docker restart ; sleep 10 && bundle exec rspec spec/acceptance/<%= spec %>_spec.rb
 <%                   end  # each

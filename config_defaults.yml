@@ -7,10 +7,12 @@
     - bundle exec rake spec SPEC_OPTS='--format documentation'
   forge_login: "camptocamp"
   includes:
-  - rvm: 2.1.9
-    env: PUPPET_GEM_VERSION="~> 4.0"
-  - rvm: 2.4.1
-    env: PUPPET_GEM_VERSION="~> 5.0"
+    - rvm: "2.1"
+      env: PUPPET_GEM_VERSION="~> 4.0"
+    - rvm: "2.4"
+      env: PUPPET_GEM_VERSION="~> 5.0"
+    - rvm: "2.5"
+      env: PUPPET_GEM_VERSION="~> 6.0"
 Gemfile:
   required:
     ':development, :unit_tests':
@@ -40,61 +42,5 @@ Gemfile:
       - gem: puppet-module-posix-system-r#{minor_version}
 Rakefile:
   default_disabled_lint_checks:
-  - 'relative'
-  - 'disable_80chars'
-#spec/acceptance/nodesets/centos-5-x86_64-docker.yml:
-#  delete: true
-#spec/acceptance/nodesets/centos-6-x86_64-openstack.yml:
-#  delete: true
-#spec/acceptance/nodesets/centos-6-x86_64-vagrant.yml:
-#  delete: true
-#spec/acceptance/nodesets/centos-6-x86_64-docker.yml:
-#  delete: true
-#spec/acceptance/nodesets/centos-7-x86_64-openstack.yml:
-#  delete: true
-#spec/acceptance/nodesets/centos-7-x86_64-vagrant.yml:
-#  delete: true
-#spec/acceptance/nodesets/centos-7-x86_64-docker.yml:
-#  delete: true
-#spec/acceptance/nodesets/debian-6-x86_64-openstack.yml:
-#  delete: true
-#spec/acceptance/nodesets/debian-6-x86_64-vagrant.yml:
-#  delete: true
-#spec/acceptance/nodesets/debian-6-x86_64-docker.yml:
-#  delete: true
-#spec/acceptance/nodesets/debian-7-x86_64-openstack.yml:
-#  delete: true
-#spec/acceptance/nodesets/debian-7-x86_64-vagrant.yml:
-#  delete: true
-#spec/acceptance/nodesets/debian-7-x86_64-docker.yml:
-#  delete: true
-#spec/acceptance/nodesets/debian-8-x86_64-openstack.yml:
-#  delete: true
-#spec/acceptance/nodesets/debian-8-x86_64-vagrant.yml:
-#  delete: true
-#spec/acceptance/nodesets/debian-8-x86_64-docker.yml:
-#  delete: true
-#spec/acceptance/nodesets/ubuntu-12.04-x86_64-openstack.yml:
-#  delete: true
-#spec/acceptance/nodesets/ubuntu-12.04-x86_64-vagrant.yml:
-#  delete: true
-#spec/acceptance/nodesets/ubuntu-12.04-x86_64-docker.yml:
-#  delete: true
-#spec/acceptance/nodesets/ubuntu-14.04-x86_64-openstack.yml:
-#  delete: true
-#spec/acceptance/nodesets/ubuntu-14.04-x86_64-vagrant.yml:
-#  delete: true
-#spec/acceptance/nodesets/ubuntu-14.04-x86_64-docker.yml:
-#  delete: true
-#spec/acceptance/nodesets/ubuntu-14.10-x86_64-openstack.yml:
-#  delete: true
-#spec/acceptance/nodesets/ubuntu-14.10-x86_64-vagrant.yml:
-#  delete: true
-#spec/acceptance/nodesets/ubuntu-14.10-x86_64-docker.yml:
-#  delete: true
-#spec/acceptance/nodesets/ubuntu-15.04-x86_64-openstack.yml:
-#  delete: true
-#spec/acceptance/nodesets/ubuntu-15.04-x86_64-vagrant.yml:
-#  delete: true
-#spec/acceptance/nodesets/ubuntu-15.04-x86_64-docker.yml:
-#  delete: true
+    - 'relative'
+    - 'disable_80chars'
