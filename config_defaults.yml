@@ -37,13 +37,7 @@ Gemfile:
       - gem: json_pure
         version: '< 2.0.2'
     ':system_tests':
-      - gem: beaker
-        version: '~>3.13'
-      - gem: beaker-rspec
-        version: '> 5'
-      - gem: beaker_spec_helper
-      - gem: serverspec
-      - gem: specinfra
+      - gem: puppet-module-posix-system-r#{minor_version}
 Rakefile:
   default_disabled_lint_checks:
   - 'relative'
