@@ -23,7 +23,7 @@ group <%= group %> do
 <%            gem['length'] -%>
 <%          end.max -%>
 <% gems.each do |gem| -%>
-  gem '<%= gem['gem'] %>'<%= ", '#{gem['version']}'" if gem['version'] %>, <%= ' ' * (maxlen - gem['length']) %> :require => false<%= ", :git => '#{gem['git']}'" if gem['git'] %><%= ", :branch => '#{gem['branch']}'" if gem['branch'] %><%= " if #{gem['condition']}" if gem['condition'] %>
+  gem "<%= gem['gem'] %>"<%= ", '#{gem['version']}'" if gem['version'] %>, <%= ' ' * (maxlen - gem['length']) %> :require => false<%= ", :git => '#{gem['git']}'" if gem['git'] %><%= ", :branch => '#{gem['branch']}'" if gem['branch'] %><%= " if #{gem['condition']}" if gem['condition'] %>
 <% end -%>
 end
 
